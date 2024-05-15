@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: linear-gradient(to left, #00efe4, #2d47ff);
+  background: linear-gradient(to bottom, rgba(255, 98, 0, 0.7), #3002ff);
 }
 body {
   color: #fff;
@@ -172,8 +172,20 @@ body {
 	position: relative;
 	overflow: hidden;
 	margin: 10px;
- 
+    border-radius: 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b)
 }
+
+
+.fileUpload:hover {
+    font-weight: bolder;
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #ff8d55, rgba(255, 101, 0, 0.79))
+}
+
 .fileUpload input {
 	position: absolute;
 	top: 0;
@@ -198,7 +210,7 @@ div#drop {
     z-index: 9999999999;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: visibility 175ms, opacity 175ms;
     display: table;
     text-shadow: 1px 1px 2px #000;
@@ -225,6 +237,34 @@ div#textnode {
           font-size: 20px;
       }
   }
+
+.ainput{
+    border-radius: 2px;
+}
+
+.bbox{
+    border: 1px solid rgba(255, 154, 97,1);
+    font-size: 16px;
+    color: #e1e1e1;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 145, 0);
+
+}
+.bbox:hover{
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 121, 0);
+    color: #ffffff;
+    font-weight: bolder;
+    border: 1px solid rgba(255, 154, 97,1);
+}
+
+.mynav {
+    border-radius: 5px;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
   
 
 /* PROGRESS BAR */

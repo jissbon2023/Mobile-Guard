@@ -7,6 +7,8 @@
  {% block extra_css %}
 <link href="{% static "adminlte/plugins/sweetalert2/sweetalert2.min.css" %}" rel="stylesheet">
 
+<link href="{% static "myself.css" %}" rel="stylesheet">
+
 <style>
 #app_icon{
         width: 64px;
@@ -25,11 +27,11 @@
 <div class="content-wrapper">
   <div class="content-header">
   </div>
-   <div class="container-fluid">
+   <div id="recent" class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
+            <div class="card ">
+              <div class="card-body mycard1">
                 
 
                  <div class="box">

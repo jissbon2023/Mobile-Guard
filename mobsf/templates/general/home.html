@@ -11,6 +11,8 @@
       <title>Mobile Security Framework - MobSF</title>
       <link rel="stylesheet" href="{% static "adminlte/dashboard/css/adminlte.min.css" %}">
       <link rel="stylesheet" href="{% static "adminlte/plugins/fontawesome-free/css/all.min.css" %}">
+
+      <link rel="stylesheet" href="{% static "myself.css" %}">
       <link rel="stylesheet" href="{% static "others/css/spinner.css" %}">
       <link rel="stylesheet" href="{% static "landing/css/home.css" %}">
       <!-- Google Font: Source Sans Pro -->
@@ -18,10 +20,10 @@
    </head>
    <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md  color_div">
         <div class="container-fluid">
             <a  class="navbar-brand abs">
-                <img src="{% static "img/mobsf_logo.png" %}" width="20%" height="20%"/>
+                <img src="{% static "img/mobsf_logo.png" %}" width="20%" height="15%"/>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -29,15 +31,15 @@
             <div class="navbar-collapse collapse" id="collapsingNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'recent' %}">RECENT</a>
+                        <a class="nav-link  bbox" href="{% url 'recent' %}">RECENT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'api_docs' %}">API</a>
+                        <a class="nav-link bbox" href="{% url 'api_docs' %}">API</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a  class="nav-link" href="{% url 'about' %}">ABOUT</a>
+                        <a  class="nav-link  bbox" href="{% url 'about' %}">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a>

@@ -26,7 +26,7 @@ body {
   padding: 100px;
   text-align: center;
   background: #3C3E4B;
-  color: white;
+  color: #e52121;
   font-size: 30px;
 }
 .htext {
@@ -46,7 +46,10 @@ body {
 table.no_border, th.no_border, td.no_border {
   border: none;
   border-collapse: collapse;
+  border-radius: 6px;
 }
+
+
 
 table { page-break-inside:auto }
 thead { display: table-header-group }

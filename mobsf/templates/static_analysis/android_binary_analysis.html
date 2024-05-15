@@ -6,6 +6,7 @@
     {% block extra_css %}
     <link href="{% static "adminlte/plugins/sweetalert2/sweetalert2.min.css" %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static "others/css/spinner.css" %}">
+    <link rel="stylesheet" href="{% static "myself.css" %}">
     <link href="{% static "datatables/css/datatables.combined.min.css" %}" rel="stylesheet">
      <style type="text/css" media="print">
         @page { size: landscape; }
@@ -365,7 +366,7 @@
         <div class="col-lg-12">
 
           <div class="card">
-            <div class="card-body">
+            <div class="card-body mycard" >
               <h5 class="card-title"></h5>
                 <div class="row">
        
@@ -440,7 +441,7 @@
           {% if not playstore_details.error %}
           <div class="col-lg-12">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body mycard">
                 <p>
                 <strong><i class="fab fa-google-play"></i> PLAYSTORE INFORMATION</strong>
                 </p>
@@ -493,7 +494,7 @@
         <div class="col-lg-12">
 
           <div class="card">
-            <div class="card-body">
+            <div class="card-body mycard">
               <h5 class="card-title"></h5>
                 <div class="row">
                         <!-- Boxes columns -->
@@ -631,7 +632,7 @@
         <div class="row">
             <div class="col-lg-4">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body mycard">
                 <p>
                 <strong><i class="fas fa-cog"></i> SCAN OPTIONS</strong>
                 </p>
@@ -649,7 +650,7 @@
             {% if app_type not in 'so' %}
             <div class="col-lg-8">
               <div class="card">
-                <div class="card-body">
+                <div class="card-body mycard">
                     <p>
                     <strong><i class="fas fa-file-code"></i> DECOMPILED CODE</strong>
                   </p>
@@ -687,7 +688,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
               <p>
                 <strong><i class="fa fa-certificate"></i> SIGNER CERTIFICATE</strong>
             </p>
@@ -711,7 +712,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fa fa-list"></i> APPLICATION PERMISSIONS</strong>
              <p>
@@ -785,7 +786,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
               <p>
              <strong><i class="fab fa-android"></i> ANDROID API</strong>
              </p>
@@ -835,7 +836,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
               <p>
              <strong><i class="fas fa-clone"></i> BROWSABLE ACTIVITIES</strong>
              </p>
@@ -915,7 +916,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-lock"></i> NETWORK SECURITY</strong>
              </p>
@@ -1013,7 +1014,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fa fa-id-card"></i> CERTIFICATE ANALYSIS</strong>
              </p>
@@ -1091,7 +1092,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-search"></i> MANIFEST ANALYSIS</strong>
              </p>
@@ -1197,7 +1198,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-code"></i> CODE ANALYSIS</strong>
              </p>
@@ -1358,7 +1359,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
               <p>
              <strong><i class="fa fa-flag"></i> SHARED LIBRARY BINARY ANALYSIS</strong>
              </p>
@@ -1440,7 +1441,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fa fa-id-badge"></i> NIAP ANALYSIS v1.3</strong>
              </p>
@@ -1490,7 +1491,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fa fa-file"></i> FILE ANALYSIS</strong>
              </p>
@@ -1535,7 +1536,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-fingerprint"></i> APKiD ANALYSIS</strong>
              </p>
@@ -1620,7 +1621,7 @@
       <div class="row">
           <div class="col-lg-12">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body mycard">
               <p>
                <strong><i class="fab fa-quora"></i> QUARK ANALYSIS</strong>
                </p>
@@ -1667,7 +1668,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-spider"></i> VIRUSTOTAL SCAN</strong>
              </p>
@@ -1717,7 +1718,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fa fa-braille"></i> ABUSED PERMISSIONS</strong>
              </p>
@@ -1782,7 +1783,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-globe-asia"></i> SERVER LOCATIONS</strong>
              </p>
@@ -1834,7 +1835,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fab fa-searchengin"></i> DOMAIN MALWARE CHECK</strong>
              </p>
@@ -1896,7 +1897,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-globe"></i> URLS</strong>
              </p>
@@ -1941,7 +1942,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
             <p>
              <strong><i class="fas fa-database"></i> FIREBASE DATABASE</strong>
              </p>
@@ -1988,7 +1989,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fas fa-envelope"></i> EMAILS</strong>
              </p>
@@ -2033,7 +2034,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fas fa-user-secret"></i> TRACKERS</strong>
              </p>
@@ -2080,7 +2081,7 @@
      <div class="row">
          <div class="col-lg-12">
          <div class="card">
-           <div class="card-body">
+           <div class="card-body mycard">
               <p>
               <strong><i class="fas fa-key"></i> POSSIBLE HARDCODED SECRETS</strong>
               </p>
@@ -2101,7 +2102,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fas fa-font"></i> STRINGS</strong>
              </p>
@@ -2142,7 +2143,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fa fa-th"></i> SYMBOLS</strong>
              </p>
@@ -2165,7 +2166,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fa fa-language"></i> ACTIVITIES</strong>
              </p>
@@ -2188,7 +2189,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fa fa-cogs"></i> SERVICES</strong>
              </p>
@@ -2211,7 +2212,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fa fa-assistive-listening-systems"></i> RECEIVERS</strong>
              </p>
@@ -2235,7 +2236,7 @@
     <div class="row">
         <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body mycard">
              <p>
              <strong><i class="fa fa-database"></i> PROVIDERS</strong>
              </p>
@@ -2258,7 +2259,7 @@
   <div class="row">
       <div class="col-lg-12">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body mycard">
             <p>
             <strong><i class="fab fa-buffer"></i> LIBRARIES</strong>
             </p>
@@ -2279,7 +2280,7 @@
   <div class="row">
       <div class="col-lg-12">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body mycard">
             <p>
             <strong><i class="far fa-copy"></i> FILES</strong>
             </p>

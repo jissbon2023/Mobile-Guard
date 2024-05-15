@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="{% static "adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" %}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- myself -->
+  <link rel="stylesheet"  href="{% static "myself.css" %}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   {% block extra_css %}
@@ -30,7 +32,7 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark navbar-primary">
+  <nav class="main-header navbar navbar-expand navbar-dark navbar-primary color_diva">
     <ul class="navbar-nav">
       <li class="nav-item">
           <a id="nbar" class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
@@ -38,10 +40,10 @@
     </ul>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-        <li class="nav-item d-none d-sm-inline-block"><a href="{% url 'recent' %}" class="nav-link">RECENT SCANS</a></li>
-        <li class="nav-item d-none d-sm-inline-block"><a href="{% url 'home' %}" class="nav-link">STATIC ANALYZER</a></li>
-        <li class="nav-item d-none d-sm-inline-block"><a href="{% url 'api_docs' %}" class="nav-link">API</a></li>
-        <li class="nav-item d-none d-sm-inline-block"><a href="{% url 'about' %}" class="nav-link">ABOUT</a></li>
+        <li class="nav-item d-none d-sm-inline-block "><a href="{% url 'recent' %}" class="nav-link bbox">RECENT SCANS</a></li>
+        <li class="nav-item d-none d-sm-inline-block "><a href="{% url 'home' %}" class="nav-link bbox">STATIC ANALYZER</a></li>
+        <li class="nav-item d-none d-sm-inline-block "><a href="{% url 'api_docs' %}" class="nav-link bbox">API</a></li>
+        <li class="nav-item d-none d-sm-inline-block "><a href="{% url 'about' %}" class="nav-link bbox">ABOUT</a></li>
     </ul>
 
     <!-- SEARCH FORM -->
@@ -61,9 +63,9 @@
   <!-- /.navbar -->
  <!-- sidebar-->
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 aside_content">
     <!-- Brand Logo -->
-    <a href="{% url 'home' %}" class="brand-link">
+    <a href="{% url 'home' %}" class="brand-link aside_top">
       <img src="{% static "img/mobsf_icon.png" %}" alt="MobSF" class="brand-image"
            style="opacity: .8">
       <span class="brand-text logo-lg"> | <strong> Mob</strong>Gd</span>
@@ -79,7 +81,7 @@
   {% endblock %}
 
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <footer class="main-footer" style="text-align: center">
     <strong>© {% now "Y" %} Mobile Guard - MobGd | <a href="https://ajinabraham.com">Ajin Abraham</a></strong>
   </footer>
 
